@@ -1,0 +1,21 @@
+algoritmo "Exemplo 2"
+
+var
+cont1:inteiro
+ra_media: vetor[1..4,1..2] de real
+inicio
+
+  para cont1 <- 1 ate 4 faca
+      escreva("Informe o RA do aluno: ")
+      leia(ra_media[cont1,1])
+      escreva("Informe a média do aluno: ")
+      leia(ra_media[cont1,2])
+  fimpara
+
+escreval("RA   -    Média")
+para cont1 <- 1 ate 4 faca
+      escreva(ra_media[cont1,1], " - ")
+      escreval(ra_media[cont1,2])
+fimpara
+
+fimalgoritmo
